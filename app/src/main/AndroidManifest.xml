@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SubActivity_02"></activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +20,9 @@
         <activity
             android:name=".SubActivity_01"
             android:label="SubActivity_01" />
+        <activity android:name=".SubActivity_02"></activity>
+
+        <activity android:name=".MusicItemClicked"></activity>
 
         <service android:name=".MusicService"/>
         <service android:name=".MusicService1"/>
