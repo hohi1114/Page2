@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Page2</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="button">Button</string>
+    <string name="음악종료">음악종료</string>
+    <string name="음악재생">음악재생</string>
+</resources>
