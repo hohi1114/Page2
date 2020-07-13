@@ -4,8 +4,10 @@ import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
+import android.widget.SeekBar;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MusicService extends Service {
     MediaPlayer mediaPlayer;
@@ -19,9 +21,9 @@ public class MusicService extends Service {
     @Override
     public void onCreate(){
         super.onCreate();
-
         mediaPlayer=MediaPlayer.create(this,R.raw.blue);
         mediaPlayer.setLooping(false);
+
     }
 
     @Override

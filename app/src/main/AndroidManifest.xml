@@ -2,10 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.page2">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="application"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -17,12 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CustomersClicked"/>
         <activity
             android:name=".SubActivity_01"
             android:label="SubActivity_01" />
+
         <activity android:name=".SubActivity_02"></activity>
 
         <activity android:name=".MusicItemClicked"></activity>
+
 
         <service android:name=".MusicService"/>
         <service android:name=".MusicService1"/>

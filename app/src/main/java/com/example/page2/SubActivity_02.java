@@ -52,6 +52,8 @@ public class SubActivity_02 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub_02);
 
+
+
         final ArrayList<MusicItem> items = new ArrayList<>();
 
         //final ArrayList<ListViewItem> items = new ArrayList<>();
