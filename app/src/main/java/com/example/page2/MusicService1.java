@@ -8,7 +8,7 @@ import android.os.IBinder;
 import androidx.annotation.Nullable;
 
 public class MusicService1 extends Service {
-    MediaPlayer mediaPlayer;
+
 
     @Nullable
     @Override
@@ -20,18 +20,18 @@ public class MusicService1 extends Service {
     public void onCreate(){
         super.onCreate();
 
-        mediaPlayer=MediaPlayer.create(this,R.raw.four);
-        mediaPlayer.setLooping(false);
+        MusicItemClicked.mediaPlayer=MediaPlayer.create(this,R.raw.four);
+        MusicItemClicked.mediaPlayer.setLooping(false);
     }
 
     @Override
     public void onDestroy(){
         super.onDestroy();
-        mediaPlayer.stop();
+        MusicItemClicked.mediaPlayer.stop();
     }
     @Override
     public int onStartCommand(Intent intent, int flags, int startId){
-        mediaPlayer.start();
+        MusicItemClicked.mediaPlayer.start();
         return super.onStartCommand(intent, flags, startId);
     }
 

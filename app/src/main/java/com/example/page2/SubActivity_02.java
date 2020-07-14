@@ -36,17 +36,6 @@ public class SubActivity_02 extends AppCompatActivity {
 
     ListView listview = null;
 
-    public static Bitmap scaleDownBitmap(Bitmap photo, int newHeight, Context context) {
-
-        final float densityMultiplier = context.getResources().getDisplayMetrics().density;
-
-        int height= (int) (newHeight*densityMultiplier);
-        int width= (int) (height * photo.getWidth()/((double) photo.getHeight()));
-
-        photo=Bitmap.createScaledBitmap(photo, width, height, true);
-
-        return photo;
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,6 +75,7 @@ public class SubActivity_02 extends AppCompatActivity {
             myImageList.add(R.drawable.four);
             myImageList.add(R.drawable.return1);
             myImageList.add(R.drawable.snow);
+            myImageList.add(R.drawable.cold);
 
 
             String s = "";
@@ -160,6 +150,8 @@ public class SubActivity_02 extends AppCompatActivity {
                     case 3:
                         sendBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.snow);
                         break;
+                    case 4:
+                        sendBitmap = BitmapFactory.decodeResource(getResources(),R.drawable.cold);
                     default:
                         break;
                 }

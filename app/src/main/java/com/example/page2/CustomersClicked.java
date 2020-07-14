@@ -56,7 +56,7 @@ public class CustomersClicked extends AppCompatActivity implements View.OnClickL
              image.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.image7));
         } else if (person_name.compareTo("정서현") == 0) {
              image.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.image8));
-        } else if (person_name.compareTo("이현호") == 0) {
+        } else if (person_name.compareTo("박종우") == 0) {
              image.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.image9));
 
         } else {

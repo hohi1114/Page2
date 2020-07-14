@@ -33,6 +33,7 @@
         <service android:name=".MusicService1"/>
         <service android:name=".MusicService2"/>
         <service android:name=".MusicService3"/>
+        <service android:name=".MusicService4"/>
 
 
     </application>
